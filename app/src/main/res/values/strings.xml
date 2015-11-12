@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="sort_preference">Sort Preference</string>
+    <string name="action_sortbyrating">sort by rating</string>
+    <string name="action_sortbypopularity">sort by popularity</string>
+    <string name="short_name_rating">Rating</string>
+    <string name="short_name_popularity">Popularity</string>
+    <string name="api_value_rating">vote_average.desc</string>
+    <string name="api_value_popularity">popularity.desc</string>
+    <string name="title_activity_detail">Selection Details</string>
+
+    <string name="detail_image_description">Poster of Selected Movie</string>
+
+    <string name="json_poster_path">poster_path</string>
+    <string name="json_name_title">original_title</string>
+    <string name="json_name_plot">overview</string>
+    <string name="json_name_rating">vote_average</string>
+    <string name="json_name_release_date">release_date</string>
+</resources>
