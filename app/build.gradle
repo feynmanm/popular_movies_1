@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.snakewind.movies"
-        minSdkVersion 13
+        minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -15,6 +15,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java/2', 'src/androidTest', 'src/androidTest/java']
         }
     }
 }
@@ -29,5 +34,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.android.support:design:23.1.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.facebook.stetho:stetho:1.3.0'
 }
 

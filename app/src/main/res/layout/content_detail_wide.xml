@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,39 +18,37 @@
             android:id="@+id/movie_title"
             style="@style/movie_title"/>
 
-        <ImageView
-            android:id="@+id/detail_image"
-            android:contentDescription="@string/detail_image_description"
-            style="@style/detail_poster"/>
-
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:orientation="horizontal" >
 
-            <TextView
-                android:id="@+id/release_year"
-                style="@style/simple_text"/>
+            <ImageView
+                android:id="@+id/detail_image"
+                style="@style/detail_poster"/>
 
-            <TextView
-                style="@style/detail_divider"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/release_year"
+                    style="@style/simple_text"/>
 
-            <TextView
-                android:id="@+id/running_time"
-                style="@style/simple_text"/>
+                <TextView
+                    android:id="@+id/running_time"
+                    style="@style/simple_text"/>
 
-            <TextView
-                style="@style/detail_divider"/>
+                <TextView
+                    android:id="@+id/rating"
+                    style="@style/simple_text"/>
 
-            <TextView
-                android:id="@+id/rating"
-                style="@style/simple_text"/>
+                <Button
+                    android:id="@+id/favorite_button"
+                    style="@style/detail_favorite_button"/>
+            </LinearLayout>
         </LinearLayout>
-
-        <Button
-            android:id="@+id/favorite_button"
-            style="@style/detail_favorite_button"/>
 
         <TextView
             android:id="@+id/plot"

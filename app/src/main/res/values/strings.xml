@@ -1,19 +1,35 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Movies</string>
     <string name="sort_preference">Sort Preference</string>
-    <string name="action_sortbyrating">sort by rating</string>
-    <string name="action_sortbypopularity">sort by popularity</string>
-    <string name="short_name_rating">Rating</string>
-    <string name="short_name_popularity">Popularity</string>
-    <string name="api_value_rating">vote_average.desc</string>
-    <string name="api_value_popularity">popularity.desc</string>
+    <string name="action_sortbyrating">highest rated</string>
+    <string name="action_sortbypopularity">most popular</string>
+    <string name="action_showfavorites">favorites</string>
+    <string name="toast_name_rating">Top <xliff:g id="rating">%d</xliff:g> Movies, Sorted by Rating</string>
+    <string name="toast_name_popularity">Top <xliff:g id="rating">%d</xliff:g> Movies, Sorted by Popularity</string>
+    <string name="toast_name_favorites">Your Favorite Movies</string>
+    <string name="toast_favorite_successful">Added to favorites</string>
+    <string name="toast_favorite_unsuccessful">Button not ready</string>
+    <string name="toast_no_internet">Data could not be retrieved from themoviedb.org</string>
+    <string name="api_value_rating">top_rated</string>
+    <string name="api_value_popularity">popular</string>
     <string name="title_activity_detail">Selection Details</string>
 
     <string name="detail_image_description">Poster of Selected Movie</string>
 
+    <string name="json_id">id</string>
     <string name="json_poster_path">poster_path</string>
-    <string name="json_name_title">original_title</string>
-    <string name="json_name_plot">overview</string>
-    <string name="json_name_rating">vote_average</string>
-    <string name="json_name_release_date">release_date</string>
+    <string name="json_title">original_title</string>
+    <string name="json_plot">overview</string>
+    <string name="json_rating">vote_average</string>
+    <string name="json_release_date">release_date</string>
+    <string name="json_runtime">runtime</string>
+
+    <string name="favorite_button_text">Add to Favorites</string>
+    <string name="already_favorited_text">Already a Favorite</string>
+    <string name="format_rating">Rating: <xliff:g id="rating">%.1f</xliff:g>/10</string>
+    <string name="format_runtime"><xliff:g id="rating">%d</xliff:g> minutes</string>
+    <string name="details_trailer_label">Trailers</string>
+    <string name="details_review_label">Reviews</string>
+
+    <string name="divider"><xliff:g id="divider">\u0020\u0020--\u0020\u0020</xliff:g></string>
 </resources>

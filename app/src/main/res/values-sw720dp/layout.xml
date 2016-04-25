@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="content_movies" type="layout">@layout/content_movies_twopane</item>
+    <item name="content_detail" type="layout">@layout/content_detail_wider</item>
+</resources>

@@ -3,14 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.android.sunshine.app.MoviesFragment">
+
     <item
         android:id="@+id/action_sortbyrating"
         android:title="@string/action_sortbyrating"
         android:orderInCategory="100"
         app:showAsAction="never" />
+
     <item
         android:id="@+id/action_sortbypopularity"
         android:title="@string/action_sortbypopularity"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_showfavorites"
+        android:title="@string/action_showfavorites"
         android:orderInCategory="100"
         app:showAsAction="never" />
 </menu>
